@@ -1,27 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <include src="./views/head.html"></include>
+    <title>Cookfest — Participantes</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+
+  <body class="bg-white text-black font-text">
+
+    <!-- Header -->
+    <include src="./views/header.html"></include>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-24 px-4">
+        <!-- Section Title -->
+        <section id="contestants" class="text-center mb-8 font-display">
+          <h1 class="text-6xl font-normal mb-4">Participantes</h1>
+          <p class="text-2xl text-gray-400">Descubre a los participantes de esta nueva edición ¿quién será el ganador este año?</p>
+        </section>
+
+        <!-- Image Placeholder -->
+        <img class="w-full h-96 object-bottom object-cover rounded-lg mb-16" src="assets/images/virgen.png" alt="Mojo con pan">
+
+        <!-- Recipes Section -->
+        <section id="recipes" class="mb-8">
+          <h2 class="text-4xl font-bold text-left mb-2 font-display font-normal">Sus recetas</h2>
+          <p class="text-gray-400 text-left mb-8 text-lg ">Estas son la recetas que prepararán nuestros concursantes este año</p>
+          <div>
+            <!-- Fila de Cards 1-->
+            <div class="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0 lg:space-x-4 justify-betweenn mb-4">
+              <div class="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0 lg:space-x-4 justify-between">
+                  <!-- Recipe Card 1 -->
+                  <div class="card w-full lg:w-1/3 p-8">
+                      <div class="text-left mb-8 text-2xl font-display text-violeta-600">Papas arrugadas con mojo</div>
+                      <div class="flex items-start space-x-6">
+                          <img class="w-20 rounded-2xl" src="../src/assets/images/juan.jpg" alt="Foto concursante">
+                          <div>
+                              <p class="font-bold">Juan Hernández</p>
+                              <p class="text-gray-600">Papas que decidieron convertirse en pasas de uva y se visten de gala con mojos para una fiesta de sabores.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Recipe Card 2 -->
+                  <div class="card w-full lg:w-1/3 p-8">
+                    <div class="text-left mb-8 text-2xl font-display text-violeta-600">Sancocho canario</div>
+                    <div class="flex items-start space-x-6">
+                        <img class="w-20 rounded-2xl" src="../src/assets/images/maria.jpg" alt="Foto concursante">
+                        <div>
+                            <p class="font-bold">María Rodríguez</p>
+                            <p class="text-gray-600">Pescado salado tan veterano que podría contarte historias de piratas, acompañado de papas y batatas, por si acaso te da hambre en la charla.</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Recipe Card 3 -->
+                  <div class="card w-full lg:w-1/3 p-8">
+                    <div class="text-left mb-8 text-2xl font-display text-violeta-600">Gofio escaldado</div>
+                    <div class="flex items-start space-x-6">
+                        <img class="w-20 rounded-2xl" src="../src/assets/images/pedro.jpg" alt="Foto concursante">
+                        <div>
+                            <p class="font-bold">Pedro González</p>
+                            <p class="text-gray-600">Una papilla de gofio que parece más un abrazo caliente que un plato, con cebolla para llorar de alegría.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fila de Cards 2-->
+            <div class="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0 lg:space-x-4 justify-between mb-4">
+              <div class="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0 lg:space-x-4 justify-between">
+                  <!-- Recipe Card 4 -->
+                  <div class="card w-full lg:w-1/3 p-8">
+                      <div class="text-left mb-8 text-2xl font-display text-violeta-600">Conejo al salmorejo</div>
+                      <div class="flex items-start space-x-6">
+                          <img class="w-20 rounded-2xl" src="../src/assets/images/isabel.jpg" alt="Foto concursante">
+                          <div>
+                              <p class="font-bold">Isabel García</p>
+                              <p class="text-gray-600">Un conejo que fue de picnic en una piscina de marinado tan sabrosa que no querrás salir de ella.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Recipe Card 5 -->
+                  <div class="card w-full lg:w-1/3 p-8">
+                    <div class="text-left mb-8 text-2xl font-display text-violeta-600">Ropa vieja</div>
+                    <div class="flex items-start space-x-6">
+                        <img class="w-20 rounded-2xl" src="../src/assets/images/antonio.jpg" alt="Foto concursante">
+                        <div>
+                            <p class="font-bold">Antonio Pérez</p>
+                            <p class="text-gray-600">Un guiso que demuestra que incluso las sobras pueden vivir su segundo acto en Broadway, lleno de garbanzos y sabores reciclados con glamour.</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Recipe Card 6 -->
+                  <div class="card w-full lg:w-1/3 p-8">
+                    <div class="text-left mb-8 text-2xl font-display text-violeta-600">Bienmesabe canario</div>
+                    <div class="flex items-start space-x-6">
+                        <img class="w-20 rounded-2xl" src="../src/assets/images/marilia.jpg" alt="Foto concursante">
+                        <div>
+                            <p class="font-bold">Marilia Suárez</p>
+                            <p class="text-gray-600">Un postre que susurra "bésame" con almendras y miel, y te deja tan feliz que podrías considerarlo tu nuevo mejor amigo.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+
+</body>
 </html>

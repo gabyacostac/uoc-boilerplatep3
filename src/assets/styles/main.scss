@@ -7,7 +7,7 @@
  * Import variables
  */
 
-@import "variables";
+// @import "variables";
 
 /**
  * Import npm dependencies
@@ -18,13 +18,38 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+@tailwind base;
+@tailwind components;
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+// @import "layouts/home";
+
+/**
+ * Extractions
+ */
+
+ @layer components {
+  .blockquote {
+    @apply pl-6 border-l border-naranja-300 w-full xl:w-3/5 mx-auto
+  }
+
+  .card {
+    @apply bg-white hover:bg-violeta-50 rounded-lg shadow-md
+  }
+
+  .btn-primary {
+    @apply bg-violeta-600 hover:bg-naranja-600 text-center text-white font-medium px-4 py-2 rounded-lg transition
+  }
+}
 
 /**
  * Do NOT include anything else in this file!
  */
+
+ @tailwind utilities;
+
